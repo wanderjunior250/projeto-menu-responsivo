@@ -122,9 +122,8 @@ figure.foto-com-legenda {
 }
 
 figure.foto-com-legenda img {
-    max-width: 1080px;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 
