@@ -1,0 +1,224 @@
+/* 
+ *  Created on : 29/01/2016, 05:23:53
+ *  Author     : Wander
+ *
+ */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0px;
+    margin-top: -20px;
+    padding: 0px;
+}
+
+
+
+.menu_bar {
+    display: none;
+}
+
+header {
+    width: 100%;
+}
+
+header nav {
+    background-color: #00152a;
+    z-index: 1000;
+    max-width: 2000px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+header nav ul {
+    overflow: hidden;
+    list-style: none;
+    margin: 0px;
+}
+
+header nav ul li {
+    float: right;
+    left: 100%;
+    display: block;
+}
+
+header nav ul#menuMobile li {
+    float: left;
+    left: 100%;
+    display: none;
+}
+
+
+header nav ul li a:hover {
+    background-color: #007586;
+}
+
+header nav ul li a{
+    display: block;
+    color: white;
+    text-shadow: 4px 4px 2px black;
+    text-decoration: none;
+    padding: 20px;
+    transition: background-color 1s;
+}
+
+header nav ul li a span {
+    margin-right: 10px;
+}
+
+
+#logotipo {
+    display: inline-block;
+    float: left;
+    color: white;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+}
+
+main article {
+    padding: 30px 15%;
+}
+
+main article#postPrincipal {
+    padding: 30px 10%;
+}
+
+main article#postPrincipal p {
+    text-indent: 50px;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+main article#postPrincipal h1 {
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+main article#postPrincipal h3 {
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+main article table#tabelaJSON  tr th {
+    width: 100%;
+}
+
+figure.foto-com-legenda {
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-com-legenda img {
+    max-width: 1080px;
+    width: 100%;
+    height: auto;
+}
+
+
+figure.foto-com-legenda figcaption {
+    opacity: .7;
+    text-align: center;
+    display: none;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        padding-top: 100px;
+    }
+
+    .menu_bar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0px; 
+        background-color: #00152a;
+    }
+
+    .menu_bar .btn-menu1 {
+        display: none;
+        padding: 20px;
+        color: white;
+        text-shadow: 4px 4px 2px black;
+        overflow: hidden;
+        font-size:25px;
+        font-weight: bold;
+        text-decoration: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .menu_bar .btn-menu2 {
+        display: none;
+        padding: 20px;
+        color: white;
+        text-shadow: 4px 4px 2px black;
+        overflow: hidden;
+        font-size:25px;
+        font-weight: bold;
+        text-decoration: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+    }
+
+    header nav {
+        width: 70%;
+        height: calc(100% - 80px);
+        position: fixed;
+        left: 0px;
+        margin: 0px;
+        overflow: scroll;
+
+    }
+
+    header nav ul {
+        padding: 0px;
+    }
+
+    header nav ul#menuMobile li {
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+        padding: 5px;
+        float: none;
+    }
+
+    header nav ul li {
+        display: none;
+    }
+
+    header nav ul li a {
+        display: block;
+    }
+
+    #logotipo {
+        display: none;
+    }
+
+}
